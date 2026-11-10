@@ -1,0 +1,14 @@
+.menu-fields{padding:0;margin:0;border:0;min-width:0}
+.schedule-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;margin:1rem 0 1.25rem}
+.schedule-options button{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:14px;text-align:left;padding:1rem;display:grid;gap:.35rem;cursor:pointer}
+.schedule-options button[aria-pressed=true]{border-color:var(--green);background:var(--pale)}
+.schedule-options svg{color:var(--green)}.schedule-options small,.dish-editor small{color:var(--muted)}
+.menu-panel h3{margin:1.35rem 0 .5rem}.menu-days,.photo-actions{display:flex;gap:.5rem;flex-wrap:wrap}
+.dish-photo{width:100%;height:auto;max-height:320px;object-fit:contain;background:var(--surface-soft);border-radius:14px}
+.photo-actions{margin:.75rem 0;align-items:center}.photo-picker{position:relative;overflow:hidden;cursor:pointer}
+.photo-picker input{opacity:0;position:absolute;inset:0;width:100%;height:100%;cursor:pointer}
+.photo-picker:focus-within{outline:2px solid var(--green);outline-offset:2px}
+.customer-dish-photo{width:clamp(100px,28%,220px);aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.plan-options label:has(input:disabled){opacity:.5}.menu-panel .day-tabs{flex-wrap:wrap}.menu-panel .form-label{margin-bottom:.7rem}
+@media(max-width:520px){.schedule-options{grid-template-columns:1fr}.menu-preview:has(.customer-dish-photo){flex-direction:column;align-items:stretch}.customer-dish-photo{width:100%}}
+.restaurant-list{display:grid;gap:1rem}.restaurant-menu-row,.restaurant-actions{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}.restaurant-menu-row{justify-content:space-between;border-top:1px solid var(--line);padding:1rem 0}.restaurant-menu-row h3{margin:0 0 .25rem}.restaurant-menu-row small{color:var(--muted)}.delete-menu{color:var(--danger)}.danger-menu{background:var(--danger);color:white}.modal .restaurant-actions{margin-top:1rem;justify-content:flex-end}

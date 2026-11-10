@@ -1,0 +1,29 @@
+.welcome-shell{min-height:100dvh;background:var(--bg);padding:0 clamp(20px,6vw,96px) 42px}
+.welcome-header{max-width:1160px;margin:auto;display:flex;align-items:center;justify-content:space-between;height:90px}
+.welcome-layout{display:grid;grid-template-columns:1.05fr .95fr;max-width:1160px;min-height:min(680px,77vh);margin:12px auto 0;background:var(--surface);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.welcome-panel{padding:clamp(28px,6vw,82px);display:flex;flex-direction:column;justify-content:center}
+.welcome-panel h1,.profile-title h1{font-family:Georgia,serif;font-weight:500;letter-spacing:-.045em;line-height:1.08;font-size:clamp(32px,4.2vw,58px)}
+.welcome-panel>p,.profile-title p{color:var(--muted);line-height:1.7;font-size:14px;margin:14px 0 30px}
+.welcome-symbol,.role-symbol{display:grid;place-items:center;color:var(--green);background:var(--pale);border-radius:14px;width:48px;height:48px;flex-shrink:0}
+.welcome-panel>.welcome-symbol{margin-bottom:24px}
+.welcome-photo{min-height:360px;position:relative;background:var(--pale)}
+.welcome-photo img{position:absolute;inset:0;object-fit:cover;width:100%;height:100%}
+.welcome-panel .btn{min-height:46px;font-size:13px}
+.role-choices{display:grid;gap:12px;margin:0 0 22px}
+.role-choice{display:flex;align-items:center;gap:13px;position:relative;padding:16px 14px;background:var(--surface);border:1px solid var(--line);border-radius:12px;cursor:pointer}
+.role-choice input{position:absolute;opacity:0;width:1px;height:1px}
+.role-choice:focus-within{outline:2px solid var(--green);outline-offset:2px}
+.role-choice.chosen{border-color:var(--green);background:var(--pale)}
+.role-choice strong,.role-choice small{display:block}.role-choice strong{font-size:15px}.role-choice small{font-size:11px;color:var(--muted);margin-top:3px}
+.role-symbol{width:37px;height:37px;border-radius:10px}
+.choice-check{width:19px;height:19px;border:1px solid var(--muted);border-radius:50%;margin-left:auto;display:grid;place-items:center;flex-shrink:0}
+.chosen .choice-check{color:var(--surface);background:var(--green);border-color:var(--green)}
+.import-choice{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);margin-bottom:18px}
+.profile-title{display:flex;align-items:center;gap:17px;margin:12px 0 30px}.profile-title h1{font-size:clamp(30px,3.2vw,45px)}.profile-title p{margin:7px 0 0;font-size:13px}
+.profile-columns{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(200px,.85fr);gap:22px;align-items:start}
+.profile-form{display:grid;gap:18px}.profile-form h2,.account-details h2{font-size:17px}.profile-form select{min-height:42px}
+.profile-form fieldset{margin:0}.area-checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.area-checks label{display:flex;align-items:center;gap:8px;font-size:12px}.profile-actions{display:flex;align-items:center;gap:14px;font-size:12px;color:var(--green)}
+.account-details{display:grid;gap:17px}.account-details p{font-size:13px;overflow-wrap:anywhere;color:var(--muted)}.account-details .text-btn{justify-self:start}
+@media(max-width:850px){.welcome-layout{grid-template-columns:1.15fr .85fr}.welcome-panel{padding:30px}.profile-columns{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.welcome-shell{padding:0 16px 25px}.welcome-header{height:74px}.welcome-layout{grid-template-columns:1fr;margin:0;min-height:0}.welcome-panel{padding:32px 23px}.welcome-photo{height:175px;min-height:0}.welcome-panel>p{font-size:13px;margin-bottom:23px}.profile-title{align-items:flex-start}.profile-title .welcome-symbol{width:39px;height:39px}.profile-title p{font-size:11px}.role-choice{padding:13px 10px}.role-choice small{font-size:10px}}
