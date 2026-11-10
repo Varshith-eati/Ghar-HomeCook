@@ -1,4 +1,4 @@
-# Ghar tiffin platform
+# Ghar HomeCook
 
 A working first version based on the supplied Tiffin Platform Project Overview, with a green-and-white theme and persistent dark mode.
 
